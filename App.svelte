@@ -1,17 +1,19 @@
 <script>
     import Component from "./Component.svelte";
 
-    let components = [{ component: Component }];
+    let components = [Component];
 
     export function addComponent(comp) {
-        components.push({ component: comp })
+        components.push(comp)
         components = components;
     }
 </script>
 
-<div>the app</div>
+<h1>The App</h1>
 
-{#each components as elem}
-    <svelte:component this={elem.component} />
+{#each components as comp}
+    <div>
+        <svelte:component this={comp} />
+    </div>
 {/each}
 

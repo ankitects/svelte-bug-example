@@ -3,8 +3,6 @@
     let value = 10;
 </script>
 
-<div>
-    {value}
-</div>
+<strong>From add-on: {value}</strong>
 
 <Component bind:value />
