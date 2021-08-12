@@ -8,6 +8,8 @@
 </script>
 
 <strong>From add-on: {value}</strong>
+<br>
 <strong>From add-on (store): {$store}</strong>
+<br>
 
 <Component bind:value {store} />
