@@ -15,5 +15,6 @@
     <div>
         <svelte:component this={comp} />
     </div>
+    <br>
 {/each}
 
